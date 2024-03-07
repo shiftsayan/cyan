@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cyan"
-version = "0.1.0"
+version = "24.3.0-alpha"
 description = ""
 authors = ["Sayan Chaudhry <sayan.chaudhry@gmail.com>"]
 readme = "README.md"
