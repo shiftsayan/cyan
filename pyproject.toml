@@ -15,4 +15,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-cyan = 'cyan.assert:main'
+cyan = 'cyan.main:main'
