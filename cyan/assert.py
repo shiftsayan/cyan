@@ -1,5 +1,7 @@
 import ast
 import sys
+from io import TextIOWrapper
+from typing import Optional, Sequence
 
 from cyan.errors import CyanError
 
@@ -23,8 +25,9 @@ def check_file(filename: str):
     visitor.visit(tree)
 
 
-def main():
-    for filename in sys.argv[1:]:
+def main(argv: Optional[Sequence[str]] = None, stdin: Optional[TextIOWrapper] = None):
+    arguments = argv if argv is not None else sys.argv[1:]
+    for filename in arguments:
         check_file(filename)
 
 
