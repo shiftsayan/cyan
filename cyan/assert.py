@@ -23,6 +23,10 @@ def check_file(filename: str):
     visitor.visit(tree)
 
 
-if __name__ == "__main__":
+def main():
     for filename in sys.argv[1:]:
         check_file(filename)
+
+
+if __name__ == "__main__":
+    main()
