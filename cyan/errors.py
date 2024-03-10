@@ -1,7 +1,7 @@
-import sys
+import ast
 
 
 class CyanError(Exception):
-    def __init__(self, message):
-        print(f"CyanError: {message}", file=sys.stderr)
-        super().__init__(message)
+    def __init__(self, node: ast.AST, message: str):
+        self.node = node
+        self.message = message
